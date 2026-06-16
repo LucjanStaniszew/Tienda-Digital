@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Audiowide;
+    color: whitesmoke;
+}
+body{
+    background-color: #2b3035;
+}
+h1, h2{
+    color: navy;
+}
+/* HEADER */
+.logo{
+    height: 8vh;
+    width: auto;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.rs{
+    height: 6vh;
+    width: auto;
+}
+.wa{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+/* HOME */
+.home{
+    padding: 50px;
+    text-align: center;
+}
+.home-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.home-img{
+    height: auto;
+    width: 45vw;
+}
+.home-flex p{
+    width: 45vw;
+}
+/* PRODUCTOS */
+.prod section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prod-img{
+    height: auto;
+    width: 60vw;
+}
