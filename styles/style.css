@@ -21,6 +21,7 @@ h1, h2{
 footer{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 50px;
 }
 .redes{
     display: flex;
@@ -63,4 +64,110 @@ footer{
 .prod-img{
     height: auto;
     width: 60vw;
+}
+/* CONTACTO */
+.main-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont-suc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-suc article{
+    display: flex;
+    gap: 100px;
+}
+.cont-suc iframe{
+    width: 40vw;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.forms input, .forms textarea{
+    width: 50vw;
+}
+.forms div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.forms div input{
+    width: 20vw;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+/* NOTEBOOK */
+
+
+/* TABLET */
+@media (min-width: 526px) and (max-width: 967px){
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    /* HOME */
+    .home-flex{
+        flex-direction: column;
+    }
+    .home-flex p{
+        width: auto;
+    }
+    .home-img{
+        width: 75vw;
+    }
+    /* CONTACTO */
+    .cont-suc article{
+        flex-direction: column;
+    }
+    .cont-suc article iframe{
+        width: 80vw;
+    }
+}
+
+/* MOBILE */
+@media (min-width: 300px) and (max-width: 525px) {
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    /* HOME */
+    .home-flex{
+        flex-direction: column;
+    }
+    .home-flex p{
+        width: auto;
+    }
+    .home-img{
+        width: 75vw;
+    }
+    /* PRODUCTOS */
+
+    /* CONTACTO */
+    .cont-suc article{
+        flex-direction: column;
+    }
+    .cont-suc article iframe{
+        width: 80vw;
+    }
+    .forms input, .forms textarea{
+        width: 75vw;
+    }
+    .forms div{
+        flex-direction: column;
+    }
+    .forms div input{
+        width: 50vw;
+    }
 }
