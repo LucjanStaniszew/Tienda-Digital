@@ -1,173 +1,189 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Audiowide;
-    color: whitesmoke;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Audiowide;
+  color: whitesmoke;
 }
-body{
-    background-color: #2b3035;
+
+body {
+  background-color: #2b3035;
 }
-h1, h2{
-    color: navy;
+body h1, body h2 {
+  color: navy;
 }
-/* HEADER */
-.logo{
-    height: 8vh;
-    width: auto;
+
+.main-cont .forms div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-/* FOOTER */
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 50px;
+
+header h1, header h2 {
+  color: navy;
 }
-.redes{
-    display: flex;
-    list-style: none;
-    gap: 20px;
+header .logo {
+  height: 8vh;
+  width: auto;
 }
-.rs{
-    height: 6vh;
-    width: auto;
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
 }
-.wa{
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
+footer nav .redes {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
-/* HOME */
-.home{
-    padding: 50px;
-    text-align: center;
+footer nav .redes li a .rs {
+  height: 6vh;
+  width: auto;
 }
-.home-flex{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+footer nav .redes li a .wa {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
 }
-.home-img{
-    height: auto;
-    width: 45vw;
-}
-.home-flex p{
-    width: 45vw;
-}
-/* PRODUCTOS */
-.prod section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.prod-img{
-    height: auto;
-    width: 60vw;
-}
-/* CONTACTO */
-.main-cont{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.cont-suc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.cont-suc article{
-    display: flex;
-    gap: 100px;
-}
-.cont-suc iframe{
-    width: 40vw;
-}
-.forms{
-    display: flex;
+@media (min-width: 526px) and (max-width: 967px) {
+  footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
 }
-.forms input, .forms textarea{
-    width: 50vw;
-}
-.forms div{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.forms div input{
-    width: 20vw;
-    background-color: transparent;
-    border-radius: 20px;
-}
-
-/* NOTEBOOK */
-
-
-/* TABLET */
-@media (min-width: 526px) and (max-width: 967px){
-    /* FOOTER */
-    footer{
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    /* HOME */
-    .home-flex{
-        flex-direction: column;
-    }
-    .home-flex p{
-        width: auto;
-    }
-    .home-img{
-        width: 75vw;
-    }
-    /* CONTACTO */
-    .cont-suc article{
-        flex-direction: column;
-    }
-    .cont-suc article iframe{
-        width: 80vw;
-    }
-}
-
-/* MOBILE */
 @media (min-width: 300px) and (max-width: 525px) {
-    /* FOOTER */
-    footer{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    /* HOME */
-    .home-flex{
-        flex-direction: column;
-    }
-    .home-flex p{
-        width: auto;
-    }
-    .home-img{
-        width: 75vw;
-    }
-    /* PRODUCTOS */
-
-    /* CONTACTO */
-    .cont-suc article{
-        flex-direction: column;
-    }
-    .cont-suc article iframe{
-        width: 80vw;
-    }
-    .forms input, .forms textarea{
-        width: 75vw;
-    }
-    .forms div{
-        flex-direction: column;
-    }
-    .forms div input{
-        width: 50vw;
-    }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
+
+.home {
+  padding: 50px;
+  text-align: center;
+}
+.home .home-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+.home .home-flex p {
+  width: 45vw;
+}
+.home .home-flex .home-img {
+  height: auto;
+  width: 45vw;
+}
+@media (min-width: 526px) and (max-width: 967px) {
+  .home .home-flex {
+    flex-direction: column;
+  }
+  .home .home-flex p {
+    width: auto;
+  }
+  .home .home-flex .home-img {
+    width: 75vw;
+  }
+}
+@media (min-width: 300px) and (max-width: 525px) {
+  .home .home-flex {
+    flex-direction: column;
+  }
+  .home .home-flex p {
+    width: auto;
+  }
+  .home .home-flex .home-img {
+    width: 75vw;
+  }
+}
+
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.main-cont .cont-suc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-cont .cont-suc article {
+  display: flex;
+  gap: 100px;
+}
+.main-cont .cont-suc article iframe {
+  width: 40vw;
+}
+.main-cont .forms {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.main-cont .forms input, .main-cont .forms textarea {
+  width: 50vw;
+}
+.main-cont .forms div {
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.main-cont .forms div input {
+  width: 20vw;
+  background-color: transparent;
+  border-radius: 20px;
+}
+@media (min-width: 526px) and (max-width: 967px) {
+  .main-cont .cont-suc article {
+    flex-direction: column;
+  }
+  .main-cont .cont-suc article iframe {
+    width: 80vw;
+  }
+}
+@media (min-width: 300px) and (max-width: 525px) {
+  .main-cont .cont-suc article {
+    flex-direction: column;
+  }
+  .main-cont .cont-suc article iframe {
+    width: 80vw;
+  }
+  .main-cont .forms input, .main-cont .forms textarea {
+    width: 75vw;
+  }
+  .main-cont .forms div {
+    flex-direction: column;
+  }
+  .main-cont .forms div input {
+    width: 50vw;
+  }
+}
+
+.prod section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.prod section .prod-img {
+  height: auto;
+  width: 60vw;
+}
+
+/*# sourceMappingURL=style.css.map */

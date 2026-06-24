@@ -1,0 +1,33 @@
+@mixin flex($dir, $fw, $jc, $ai){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+}
+// EXTEND
+%flex-row-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+// NOTEBOOK
+@mixin notebook{
+    @media (min-width: 968px) and (max-width: 1440px){
+        @content;
+    }
+}
+// TABLET
+@mixin tablet{
+    @media (min-width: 526px) and (max-width: 967px){
+        @content;
+    }
+}
+// MOBILE
+@mixin mobile{
+    @media (min-width: 300px) and (max-width: 525px){
+        @content;
+    }
+}

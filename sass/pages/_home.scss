@@ -1,0 +1,39 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.home{
+    padding: 50px;
+    text-align: center;
+    .home-flex{
+        @include m.flex(row, nowrap, start, center);
+        p{
+            width: 45vw;
+        }
+        .home-img{
+            height: auto;
+            width: 45vw;
+        }
+    }
+    @include m.tablet{
+        .home-flex{
+            flex-direction: column;
+            p{
+                width: auto;
+            }
+            .home-img{
+                width: 75vw;
+            }
+        }
+    }
+    @include m.mobile{
+        .home-flex{
+            flex-direction: column;
+            p{
+                width: auto;
+            }
+            .home-img{
+                width: 75vw;
+            }
+        }
+    }
+}

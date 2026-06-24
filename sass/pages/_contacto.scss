@@ -1,0 +1,67 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.main-cont{
+    @include m.flex(column, nowrap, start, center);
+    gap: 20px;
+    .cont-suc{
+        @include m.flex(column, nowrap, space-around, center);
+        article{
+            display: flex;
+            gap: 100px;
+            iframe{
+                width: 40vw;
+            }
+        }
+    }
+    .forms{
+        @include m.flex(column, nowrap, start, center);
+        gap: 20px;
+        input, textarea{
+            width: 50vw;
+        }
+        div{
+            // @include m.flex(row, nowrap, start, start);
+            @extend %flex-row-center;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            input{
+                width: 20vw;
+                background-color: transparent;
+                border-radius: 20px;
+            }
+        }
+    }
+    @include m.tablet{
+        .cont-suc{
+            article{
+                flex-direction: column;
+                iframe{
+                    width: 80vw;
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        .cont-suc{
+            article{
+                flex-direction: column;
+                iframe{
+                    width: 80vw;
+                }
+            }
+        }
+        .forms{
+            input, textarea{
+                width: 75vw;
+            }
+            div{
+                flex-direction: column;
+                input{
+                    width: 50vw;
+                }
+            }
+        }
+    }
+}

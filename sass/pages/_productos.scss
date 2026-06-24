@@ -1,0 +1,11 @@
+@use "../utilities/mixins" as m;
+
+.prod{
+    section{
+        @include m.flex(column, nowrap, center, center);
+        .prod-img{
+            height: auto;
+            width: 60vw;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+$fuente: Audiowide;
+$colorPrincipal: navy;
+$colorSecundario: whitesmoke;
+$fondo: #2b3035;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+    color: $colorSecundario;
+}
+body{
+    background-color: $fondo;
+    h1, h2{
+        color: $colorPrincipal;
+    }
+}

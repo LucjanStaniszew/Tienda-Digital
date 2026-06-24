@@ -1,0 +1,11 @@
+@use "../utilities/variables" as v;
+
+header{
+    h1, h2{
+        color: v.$colorPrincipal;
+    }
+    .logo{
+        height: 8vh;
+        width: auto;
+    }
+}
