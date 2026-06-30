@@ -30,6 +30,34 @@ header .logo {
   width: auto;
 }
 
+@keyframes vibrate {
+  10% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes scaleUp {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 2;
+  }
+}
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -48,6 +76,7 @@ footer nav .redes li a .wa {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  animation: vibrate 2s infinite ease-in-out;
 }
 @media (min-width: 526px) and (max-width: 967px) {
   footer {
@@ -171,6 +200,71 @@ footer nav .redes li a .wa {
   }
   .main-cont .forms div input {
     width: 50vw;
+  }
+}
+
+.main-gal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-gal .gal-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.main-gal .gal-container div {
+  padding: 25px;
+  width: 30vw;
+  height: auto;
+  border: 5px solid navy;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.main-gal .gal-container div img {
+  width: 25vw;
+  height: auto;
+  transition: all 2s ease;
+}
+.main-gal .gal-container div img:hover {
+  scale: 2;
+}
+@media (min-width: 968px) and (max-width: 1440px) {
+  .main-gal .gal-container {
+    flex-wrap: wrap;
+  }
+  .main-gal .gal-container div {
+    width: 45vw;
+  }
+  .main-gal .gal-container div img {
+    width: 40vw;
+  }
+}
+@media (min-width: 526px) and (max-width: 967px) {
+  .main-gal .gal-container {
+    flex-direction: column;
+  }
+  .main-gal .gal-container div {
+    width: 80vw;
+  }
+  .main-gal .gal-container div img {
+    width: 70vw;
+  }
+}
+@media (min-width: 300px) and (max-width: 525px) {
+  .main-gal .gal-container {
+    flex-direction: column;
+  }
+  .main-gal .gal-container div {
+    width: 90vw;
+  }
+  .main-gal .gal-container div img {
+    width: 80vw;
   }
 }
 

@@ -1,5 +1,6 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+@use "../utilities/animation" as a;
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -19,6 +20,7 @@ footer{
                         position: fixed;
                         bottom: 25px;
                         right: 25px;
+                        animation: vibrate 2s infinite ease-in-out;
                     }
                 }
             }
